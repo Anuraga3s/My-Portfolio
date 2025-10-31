@@ -1,16 +1,76 @@
-# React + Vite
+🌐 My Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website — a showcase of my skills, projects, and journey as a developer.
+Built using React, Vite, and Tailwind CSS, this portfolio reflects my passion for clean design, efficient code, and continuous learning.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+💼 Projects Section – Highlights my latest work, showcasing both frontend and full-stack applications.
 
-## React Compiler
+🧠 Skills Section – Categorized list of my technical expertise in frontend, backend, and core CS subjects.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+📬 Contact Section – Integrated form for direct communication via email.
 
-## Expanding the ESLint configuration
+🌙 Dark/Light Mode – Theme toggle for personalized user experience.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+⚡ Responsive Design – Optimized for all screen sizes.
+
+🛠️ Tech Stack
+
+Frontend:
+
+React
+
+Vite
+
+Tailwind CSS
+
+Other Tools & Libraries:
+
+Lucide Icons
+
+Framer Motion (for animations)
+
+Shadcn UI components
+
+EmailJS (for contact form integration)
+
+📸 Preview
+
+Add a screenshot or demo link here
+
+![Portfolio Preview](./screenshot.png)
+
+⚙️ Installation & Setup
+
+Clone the repository:
+
+git clone https://github.com/your-username/portfolio.git
+cd portfolio
+
+
+Install dependencies:
+
+npm install
+
+
+Run the development server:
+
+npm run dev
+
+
+Build for production:
+
+npm run build
+
+🌍 Deployment
+
+This portfolio is deployed using Vercel.
+Every commit to the main branch triggers an automatic redeployment.
+
+🔗 Live Demo: 
+
+👨‍💻 About Me
+
+Hi, I’m Anurag, a passionate Computer Science Engineering student with a strong interest in web development, problem-solving, and full-stack technologies.
+I love building meaningful digital experiences and continuously improving my technical and design skills.
