@@ -17,27 +17,11 @@ Built using React, Vite, and Tailwind CSS, this portfolio reflects my passion fo
 
 🛠️ Tech Stack
 
-Frontend:
+Frontend: React || Vite || Tailwind CSS
 
-React
-
-Vite
-
-Tailwind CSS
-
-Other Tools & Libraries:
-
-Lucide Icons
-
-Framer Motion (for animations)
-
-Shadcn UI components
-
-EmailJS (for contact form integration)
+Other Tools & Libraries: Lucide Icons || Framer Motion (for animations) || Shadcn UI components || EmailJS (for contact form integration)
 
 📸 Preview
-
-Add a screenshot or demo link here
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/473bfe95-0cd9-4a42-9eba-fee07c74ee69" />
 
