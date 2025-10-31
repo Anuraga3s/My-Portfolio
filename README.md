@@ -39,7 +39,8 @@ EmailJS (for contact form integration)
 
 Add a screenshot or demo link here
 
-![Portfolio Preview](./screenshot.png)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/473bfe95-0cd9-4a42-9eba-fee07c74ee69" />
+
 
 ⚙️ Installation & Setup
 
@@ -68,7 +69,7 @@ npm run build
 This portfolio is deployed using Vercel.
 Every commit to the main branch triggers an automatic redeployment.
 
-🔗 Live Demo: 
+🔗 Live Demo: http://portfolio-anurag-choudhary-sigma-53.vercel.app/
 
 👨‍💻 About Me
 
