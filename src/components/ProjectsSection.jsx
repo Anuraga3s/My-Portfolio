@@ -3,6 +3,15 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
+    title: "AI Background Remover",
+    description: "Remove your Image Background for Free",
+    image: "/projects/project1.png",
+    tags: ["React", "Node.js", "Express", "MongoDB", "TailwindCSS", "REST API", "Full Stack"],
+    demoUrl: "https://ai-background-remover-one.vercel.app/",
+    githubUrl: "",
+  },
+  {
+    id: 2,
     title: "Car Rental App",
     description: "Web application for renting cars with real-time availability.",
     image: "/projects/project1.png",
@@ -11,7 +20,7 @@ const projects = [
     githubUrl: "https://github.com/Anuraga3s/Car-Rental",
   },
   {
-    id: 2,
+    id: 3,
     title: "BookStore",
     description:
       "Interactive web app for browsing and purchasing books online.",
@@ -21,7 +30,7 @@ const projects = [
     githubUrl: "https://github.com/Anuraga3s/Book-Store",
   },
   {
-    id: 3,
+    id: 4,
     title: "Weather Dashboard",
     description:
       "A dashboard displaying real-time weather data and forecasts.",
@@ -31,7 +40,7 @@ const projects = [
     githubUrl: "https://github.com/Anuraga3s/Weather-Application",
   },
   {
-    id: 4,
+    id: 5,
     title: "Sorting Algorithm Visualizer",
     description:
       "Visual representation of various sorting algorithms in action.",
@@ -41,7 +50,7 @@ const projects = [
     githubUrl: "https://github.com/Anuraga3s/Sorting-Algorithm-Visualizer",
   },
   {
-    id: 5,
+    id: 6,
     title: "Mathsmith Calculator",
     description:
       "Web based calculator",
