@@ -5,10 +5,10 @@ const projects = [
     id: 1,
     title: "AI Background Remover",
     description: "Remove your Image Background for Free",
-    image: "/projects/project1.png",
+    image: "/projects/project6.png",
     tags: ["React", "Node.js", "Express", "MongoDB", "TailwindCSS", "REST API", "Full Stack"],
     demoUrl: "https://ai-background-remover-one.vercel.app/",
-    githubUrl: "",
+    githubUrl: "https://github.com/Anuraga3s/Background-Remover",
   },
   {
     id: 2,
