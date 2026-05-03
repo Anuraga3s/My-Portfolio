@@ -9,7 +9,7 @@ Built using React, Vite, and Tailwind CSS, this portfolio reflects my passion fo
 
 🧠 Skills Section – Categorized list of my technical expertise in frontend, backend, and core CS subjects.
 
-📬 Contact Section – Integrated form for direct communication via email.
+📬 Contact Section – Direct email, phone, location, and social links.
 
 🌙 Dark/Light Mode – Theme toggle for personalized user experience.
 
@@ -19,7 +19,7 @@ Built using React, Vite, and Tailwind CSS, this portfolio reflects my passion fo
 
 Frontend: React || Vite || Tailwind CSS
 
-Other Tools & Libraries: Lucide Icons || Framer Motion (for animations) || Shadcn UI components || EmailJS (for contact form integration)
+Other Tools & Libraries: Lucide Icons || Framer Motion (for animations) || Shadcn UI components
 
 📸 Preview
 

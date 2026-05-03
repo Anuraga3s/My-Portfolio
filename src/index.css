@@ -1,9 +1,12 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-border: hsl(var(--border));
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));
+  --color-muted-foreground: hsl(var(--muted-foreground));
 
   --color-primary: hsl(var(--primary));
   --color-primary-foreground: hsl(var(--primary-foreground));
@@ -18,6 +21,11 @@
   --animate-fade-in-delay-3: fade-in 0.7s ease-out 0.6s forwards;
   --animate-fade-in-delay-4: fade-in 0.7s ease-out 0.8s forwards;
   --animate-meteor: meteor 5s linear infinite;
+  --animate-3d-float: float-3d 6s ease-in-out infinite;
+  --animate-fade-in-section: fade-in-section 0.8s ease-out forwards;
+  --animate-fade-in-section-delay: fade-in-section 0.8s ease-out 0.2s forwards;
+  --animate-fade-in-section-delay-2: fade-in-section 0.8s ease-out 0.4s forwards;
+  --animate-tilt-in: tilt-in 0.8s ease-out forwards;
 
   @keyframes float {
     0%,
@@ -60,12 +68,47 @@
       opacity: 0;
     }
   }
+
+  @keyframes float-3d {
+    0%, 100% {
+      transform: translateY(0px) rotateX(0deg) rotateY(0deg);
+    }
+    33% {
+      transform: translateY(-15px) rotateX(5deg) rotateY(5deg);
+    }
+    66% {
+      transform: translateY(-10px) rotateX(-3deg) rotateY(-5deg);
+    }
+  }
+
+  @keyframes fade-in-section {
+    from {
+      opacity: 0;
+      transform: translateY(30px) translateZ(0);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) translateZ(0);
+    }
+  }
+
+  @keyframes tilt-in {
+    from {
+      opacity: 0;
+      transform: perspective(1000px) rotateX(45deg) rotateY(-30deg) scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1);
+    }
+  }
 }
 
 @layer base {
   :root {
     --background: 210 40% 98%;
     --foreground: 222 47% 11%;
+    --muted-foreground: 215 16% 36%;
 
     --card: 0 0% 100%;
 
@@ -78,6 +121,7 @@
   .dark {
     --background: 222 47% 4%;
     --foreground: 213 31% 91%;
+    --muted-foreground: 215 20% 65%;
 
     --card: 222 47% 8%;
 
@@ -149,6 +193,39 @@
   box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.4);
 }
 
+@utility perspective {
+  perspective: 1000px;
+}
+
+@utility preserve-3d {
+  transform-style: preserve-3d;
+}
+
+@utility fade-in-section {
+  @apply opacity-0 animate-fade-in-section;
+}
+
+@utility fade-in-section-delay {
+  @apply opacity-0 animate-fade-in-section-delay;
+}
+
+@utility fade-in-section-delay-2 {
+  @apply opacity-0 animate-fade-in-section-delay-2;
+}
+
+@utility card-3d {
+  @apply transition-all duration-500 transform;
+  transform-style: preserve-3d;
+}
+
+@utility float-3d {
+  @apply animate-3d-float;
+}
+
+@utility tilt-card {
+  @apply relative transition-transform duration-300 ease-out;
+}
+
 @utility meteor {
   @apply absolute bg-linear-to-r from-white via-white to-transparent rounded-full;
   box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
@@ -159,4 +236,42 @@
   margin: 0 auto;
   padding: 0;
   text-align: center;
+}
+
+/* Enhanced 3D input styling */
+input:focus,
+textarea:focus {
+  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.2), 
+              inset 0 0 15px rgba(139, 92, 246, 0.1);
+  transform: perspective(1000px) translateZ(5px);
+}
+
+/* Smooth transitions for all elements */
+* {
+  scroll-behavior: smooth;
+}
+
+/* 3D card hover effects */
+.tilt-card {
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.tilt-card:hover {
+  transform: translateY(-8px) perspective(1000px) rotateX(8deg);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* Section fade-in animations */
+@layer base {
+  .fade-in-on-scroll {
+    opacity: 0;
+    animation: fade-in-section 0.8s ease-out forwards;
+  }
+}
+
+/* Smooth backdrop for depth */
+.backdrop-3d {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
 }

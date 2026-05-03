@@ -4,7 +4,7 @@ import { NotFound } from "./pages/NotFound";
 import { Toaster } from "@/components/ui/toaster";
 
 function App() {
-  return (
+return (
     <>
       <Toaster />
       <BrowserRouter>
