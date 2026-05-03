@@ -8,7 +8,7 @@ export const Footer = () => {
           {/* Branding */}
           <div className="space-y-4">
             <h3 className="text-2xl font-black bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-              AC Dev
+              Anurag Choudhary
             </h3>
             <p className="text-muted-foreground text-sm leading-relaxed">
               High-octane development with precision engineering. Crafting digital experiences that accelerate your vision.

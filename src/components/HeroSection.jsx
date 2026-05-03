@@ -12,12 +12,12 @@ export const HeroSection = () => {
       <div className="container max-w-4xl mx-auto text-center z-10 perspective">
         <div className="space-y-6">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-            <span className="opacity-0 animate-fade-in block mb-2 inline-block"> Hi, I'm</span>
-            <span className="text-primary opacity-0 animate-fade-in-delay-1 block mb-2 inline-block">
+            <span className="opacity-0 animate-fade-in block mb-2"> Hi, I'm</span>
+            <span className="text-primary opacity-0 animate-fade-in-delay-1 block mb-2">
               {" "}
               Anurag
             </span>
-            <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2 block inline-block hover:animate-pulse transition-transform duration-300 hover:scale-105">
+            <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2 block hover:animate-pulse transition-transform duration-300 hover:scale-105">
               {" "}
               Choudhary
             </span>
@@ -32,7 +32,7 @@ export const HeroSection = () => {
           <div className="pt-4 opacity-0 animate-fade-in-delay-4 transform hover:scale-110 transition-transform duration-300">
             <a
               href="#projects"
-              className="cosmic-button inline-block transform hover:translate-y-[-2px]"
+              className="cosmic-button inline-block transform hover:-translate-y-0.5"
             >
               View My Work
             </a>

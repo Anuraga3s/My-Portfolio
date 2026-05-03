@@ -4,11 +4,11 @@ export const AboutSection = () => {
   return (
     <section
       id="about"
-      className="py-24 px-4 relative bg-gradient-to-b from-slate-100 to-white text-foreground dark:from-slate-900 dark:to-slate-950"
+      className="py-24 px-4 relative bg-linear-to-b from-slate-100 to-white text-foreground dark:from-slate-900 dark:to-slate-950"
     >
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-5xl md:text-6xl font-black mb-12 text-center">
-          <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+          <span className="bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
             About Me
           </span>
         </h2>
@@ -40,7 +40,7 @@ export const AboutSection = () => {
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <a
                 href="#contact"
-                className="px-8 py-3 rounded-lg bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold hover:shadow-2xl hover:shadow-purple-500/50 transition-all duration-300 hover:scale-105 transform inline-block text-center"
+                className="px-8 py-3 rounded-lg bg-linear-to-r from-purple-600 to-pink-600 text-white font-semibold hover:shadow-2xl hover:shadow-purple-500/50 transition-all duration-300 hover:scale-105 transform inline-block text-center"
               >
                 Get In Touch
               </a>
