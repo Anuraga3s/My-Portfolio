@@ -12,7 +12,6 @@ const skills = [
   { name: "Node.js", category: "backend" },
   { name: "Express", category: "backend" },
   { name: "MongoDB", category: "backend" },
-  { name: "GraphQL", category: "backend" },
 
   // Tools
   { name: "Git/GitHub", category: "tools" },
@@ -25,6 +24,7 @@ const skills = [
   { name: "Data Structures and Algorithms", category: "core" },
   { name: "Object Oriented Programming", category: "core" },
   { name: "Database Management System", category: "core" },
+  { name: "Operating System", category: "core" },
 ];
 
 const categories = ["all", "frontend", "backend", "tools", "core"];
